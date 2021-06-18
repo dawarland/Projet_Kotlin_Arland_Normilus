@@ -26,7 +26,6 @@ Then, open `http://localhost:8080/shoes/` in your browser
 - Create :
 ![image](https://user-images.githubusercontent.com/27726821/122564025-324a8f00-d045-11eb-8928-a37384867e6c.png)
 POST => http://localhost:8080/shoes
-body
 ```JSON
 {
     "name":"...",
@@ -37,7 +36,6 @@ body
 ```
 - Update :
 POST => http://localhost:8080/shoes/3
-body
 ```JSON
 {
     "name":"NewName",
