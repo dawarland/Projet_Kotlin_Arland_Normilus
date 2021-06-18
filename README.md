@@ -12,7 +12,7 @@ Execute this command in a terminal:
 ./gradlew bootRun
 ```
 
-Then, open `http://localhost:8080/books/` in your browser
+Then, open `http://localhost:8080/shoes/` in your browser
 
 ## If it doesn't works 
 
