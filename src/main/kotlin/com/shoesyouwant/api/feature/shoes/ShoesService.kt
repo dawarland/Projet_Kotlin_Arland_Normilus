@@ -36,6 +36,7 @@ class ShoesService {
         val shoes = Shoes()
         shoes.name = if (dto.name is String) dto.name else "Unknow"  // Smart cast
         shoes.releaseDate = dto.releaseDate
+        shoes.price = (dto.price)?.toFloat()
         shoes.brand = brand
         return shoesRepository.save(shoes).id
     }
@@ -47,6 +48,7 @@ class ShoesService {
 
         shoes.name = dto.name
         shoes.releaseDate = dto.releaseDate
+        shoes.price = (dto.price)?.toFloat()
 
         if(dto.brandId != null && dto.brandId == shoes.brand?.id) {
             val brand = brandRepository.findById(dto.brandId!!).orElse(null)
